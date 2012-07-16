@@ -17,7 +17,7 @@ public class HelloWorldAction extends Action {
 	public ActionForward execute(ActionMapping mapping, ActionForm form,
 			HttpServletRequest request, HttpServletResponse response)
 			throws Exception {
-		executeTest();
+//		executeTest();
 		HelloWorldForm hwForm = (HelloWorldForm) form;
 //		this.getServlet().getServletContext().getRealPath("TestFiles\\CouponTest.txt");		
 		hwForm.setMessage("Web Service Executed Succesfully");
