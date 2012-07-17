@@ -4,8 +4,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>Internet Dreams</title>
-<link rel="stylesheet" href="css/screen.css" type="text/css"
-	media="screen" title="default" />
+<link rel="stylesheet" href="css/screen.css" type="text/css" media="screen" title="default" />
 <!--[if IE]>
 <link rel="stylesheet" media="all" type="text/css" href="css/pro_dropline_ie.css" />
 <![endif]-->
@@ -171,10 +170,7 @@
 		<div id="page-top">
 
 			<!-- start logo -->
-			<div id="logo">
-<!-- 				<a href=""><img src="images/shared/logo.png" width="156"
-					height="40" alt="" /> </a> -->
-			</div>
+			<div id="logo"></div>
 			<!-- end logo -->
 
 			<!--  start top-search -->
@@ -184,14 +180,9 @@
 						<td><input type="text" value="Search"
 							onblur="if (this.value=='') { this.value='Search'; }"
 							onfocus="if (this.value=='Search') { this.value=''; }"
-							class="top-search-inp" />
-						</td>
+							class="top-search-inp" /></td>
 						<td><select class="styledselect">
 								<option value="">All</option>
-								<!-- <option value="">Products</option>
-								<option value="">Categories</option>
-								<option value="">Clients</option>
-								<option value="">News</option> -->
 						</select></td>
 						<td><input type="image"
 							src="images/shared/top_search_btn.gif" /></td>
@@ -256,92 +247,23 @@
 			<div class="nav">
 				<div class="table">
 
-				<!-- 	<ul class="select">
-						<li><a href="#nogo"><b>Dashboard</b> [if IE 7]><!
-						</a> <![endif] [if lte IE 6]><table><tr><td><![endif]
-							<div class="select_sub">
-								<ul class="sub">
-									<li><a href="#nogo">Dashboard Details 1</a>
-									</li>
-									<li><a href="#nogo">Dashboard Details 2</a>
-									</li>
-									<li><a href="#nogo">Dashboard Details 3</a>
-									</li>
-								</ul>
-							</div> [if lte IE 6]></td></tr></table></a><![endif]</li>
-					</ul> -->
 
 					<div class="nav-divider">&nbsp;</div>
 
 					<ul class="current">
-						<li><a href="#nogo"><b>Test Plan</b> <!--[if IE 7]><!--> </a>
-							<!--<![endif]--> <!--[if lte IE 6]><table><tr><td><![endif]-->
+						<li><a href="#nogo"><b>Test Plan</b> <!--[if IE 7]><!-->
+						</a> <!--<![endif]--> <!--[if lte IE 6]><table><tr><td><![endif]-->
 							<div class="select_sub show">
 								<ul class="sub">
-									<li><a href="#nogo">View all Test Cases</a>
-									</li>
-									<li class="sub_show"><a href="#nogo"> Add Test Case </a>
-									</li>
-									<li><a href="#nogo">Delete Test Case</a>
-									</li>
+									<li><a href="#nogo">View all Test Cases</a></li>
+									<li class="sub_show"><a href="#nogo"> Add Test Case </a></li>
+									<li><a href="#nogo">Delete Test Case</a></li>
 								</ul>
 							</div> <!--[if lte IE 6]></td></tr></table></a><![endif]--></li>
 					</ul>
 
-				 	<div class="nav-divider">&nbsp;</div>
-
-					<!-- <ul class="select">
-						<li><a href="#nogo"><b>Categories</b> [if IE 7]><!
-						</a> <![endif] [if lte IE 6]><table><tr><td><![endif]
-							<div class="select_sub">
-								<ul class="sub">
-									<li><a href="#nogo">Categories Details 1</a>
-									</li>
-									<li><a href="#nogo">Categories Details 2</a>
-									</li>
-									<li><a href="#nogo">Categories Details 3</a>
-									</li>
-								</ul>
-							</div> [if lte IE 6]></td></tr></table></a><![endif]</li>
-					</ul> --> 
-<!-- 
 					<div class="nav-divider">&nbsp;</div>
-
-					<ul class="select">
-						<li><a href="#nogo"><b>Clients</b> [if IE 7]><! </a> <![endif]
-							[if lte IE 6]><table><tr><td><![endif]
-							<div class="select_sub">
-								<ul class="sub">
-									<li><a href="#nogo">Clients Details 1</a>
-									</li>
-									<li><a href="#nogo">Clients Details 2</a>
-									</li>
-									<li><a href="#nogo">Clients Details 3</a>
-									</li>
-
-								</ul>
-							</div> [if lte IE 6]></td></tr></table></a><![endif]</li>
-					</ul> -->
-<!-- 
-					<div class="nav-divider">&nbsp;</div>
-
-					<ul class="select">
-						<li><a href="#nogo"><b>News</b> [if IE 7]><! </a> <![endif]
-							[if lte IE 6]><table><tr><td><![endif]
-							<div class="select_sub">
-								<ul class="sub">
-									<li><a href="#nogo">News details 1</a>
-									</li>
-									<li><a href="#nogo">News details 2</a>
-									</li>
-									<li><a href="#nogo">News details 3</a>
-									</li>
-								</ul>
-							</div> [if lte IE 6]></td></tr></table></a><![endif]</li>
-					</ul>
-
-					<div class="clear"></div>-->
-				</div> 
+				</div>
 				<div class="clear"></div>
 			</div>
 			<!--  start nav -->
@@ -366,22 +288,19 @@
 					<bean:write name="helloWorldForm" property="message" />
 				</h1>
 			</div>
+<form action="helloWorld.do" method="post" >
 
-
-			<table border="0" width="100%" cellpadding="0" cellspacing="0"
-				id="content-table">
+		<table border="0" width="100%" cellpadding="0" cellspacing="0" id="content-table">
 				<tr>
 					<th rowspan="3" class="sized"><img
 						src="images/shared/side_shadowleft.jpg" width="20" height="300"
-						alt="" />
-					</th>
+						alt="" /></th>
 					<th class="topleft"></th>
 					<td id="tbl-border-top">&nbsp;</td>
 					<th class="topright"></th>
 					<th rowspan="3" class="sized"><img
 						src="images/shared/side_shadowright.jpg" width="20" height="300"
-						alt="" />
-					</th>
+						alt="" /></th>
 				</tr>
 				<tr>
 					<td id="tbl-border-left"></td>
@@ -398,20 +317,12 @@
 											<div class="step-dark-left">
 												<a href="">Add Test Case</a>
 											</div>
-<!-- 											<div class="step-dark-right">&nbsp;</div> -->
-											<!-- <div class="step-no-off">2</div>
-											<div class="step-light-left">Select related products</div>
-											<div class="step-light-right">&nbsp;</div>
-											<div class="step-no-off">3</div>
-											<div class="step-light-left">Preview</div> -->
-<!-- 											<div class="step-light-round">&nbsp;</div> -->
 											<div class="clear"></div>
 										</div> <!--  end step-holder --> <!-- start id-form -->
 										<table border="0" cellpadding="0" cellspacing="0" id="id-form">
 											<tr>
 												<th valign="top">Test name:</th>
-												<td><input type="text" class="inp-form" />
-												</td>
+												<td><input type="text" class="inp-form" /></td>
 												<td></td>
 											</tr>
 											<tr>
@@ -425,110 +336,38 @@
 											</tr>
 											<tr>
 												<th>File Path:</th>
-												<td><input type="file" class="file_1" />
-												</td>
+												<td><input type="file" class="file_1" /></td>
 												<td>
 													<div class="bubble-left"></div> <!-- 													<div class="bubble-inner">JPEG, GIF 5MB max per image</div> -->
-													<div class="bubble-right"></div></td>
+													<div class="bubble-right"></div>
+												</td>
 											</tr>
 											<tr>
 												<th>&nbsp;</th>
-												<td valign="top"><input type="button" value=""
+												<td valign="top"><input type="submit" value=""
 													class="form-submit" /> <input type="reset" value=""
 													class="form-reset" /></td>
 												<td></td>
 											</tr>
-										</table> <!-- end id-form  --></td>
+										</table> <!-- end id-form  -->
+									</td>
 									<td>
 										<!--  start related-activities -->
-										<div id="related-activities">
-
-										<!-- 	
-											<div id="related-act-top">
-												<img src="images/forms/header_related_act.gif" width="271"
-													height="43" alt="" />
-											</div>
-											end related-act-top
-
-											 start related-act-bottom
-											<div id="related-act-bottom">
-
-												 start related-act-inner
-												<div id="related-act-inner">
-
-													<div class="left">
-														<a href=""><img src="images/forms/icon_plus.gif"
-															width="21" height="21" alt="" /> </a>
-													</div>
-													<div class="right">
-														<h5>Add another product</h5>
-														Lorem ipsum dolor sit amet consectetur adipisicing elitsed
-														do eiusmod tempor.
-														<ul class="greyarrow">
-															<li><a href="">Click here to visit</a>
-															</li>
-															<li><a href="">Click here to visit</a></li>
-														</ul>
-													</div>
-
-													<div class="clear"></div>
-													<div class="lines-dotted-short"></div>
-
-													<div class="left">
-														<a href=""><img src="images/forms/icon_minus.gif"
-															width="21" height="21" alt="" /> </a>
-													</div>
-													<div class="right">
-														<h5>Delete products</h5>
-														Lorem ipsum dolor sit amet consectetur adipisicing elitsed
-														do eiusmod tempor.
-														<ul class="greyarrow">
-															<li><a href="">Click here to visit</a>
-															</li>
-															<li><a href="">Click here to visit</a></li>
-														</ul>
-													</div>
-
-													<div class="clear"></div>
-													<div class="lines-dotted-short"></div>
-
-													<div class="left">
-														<a href=""><img src="images/forms/icon_edit.gif"
-															width="21" height="21" alt="" /> </a>
-													</div>
-													<div class="right">
-														<h5>Edit categories</h5>
-														Lorem ipsum dolor sit amet consectetur adipisicing elitsed
-														do eiusmod tempor.
-														<ul class="greyarrow">
-															<li><a href="">Click here to visit</a>
-															</li>
-															<li><a href="">Click here to visit</a></li>
-														</ul>
-													</div>
-													<div class="clear"></div>
-
-												</div>
-												end related-act-inner
-												<div class="clear"></div>
-
-											</div>
-											end related-act-bottom -->
-
-										</div> <!-- end related-activities --></td>
+										<div id="related-activities"></div> <!-- end related-activities -->
+									</td>
 								</tr>
 								<tr>
 									<td><img src="images/shared/blank.gif" width="695"
-										height="1" alt="blank" />
-									</td>
+										height="1" alt="blank" /></td>
 									<td></td>
 								</tr>
 							</table>
-
+</form>
 							<div class="clear"></div>
 
 
-						</div> <!--  end content-table-inner  --></td>
+						</div> <!--  end content-table-inner  -->
+					</td>
 					<td id="tbl-border-right"></td>
 				</tr>
 				<tr>
@@ -537,10 +376,6 @@
 					<th class="sized bottomright"></th>
 				</tr>
 			</table>
-
-
-
-
 
 			<div class="clear">&nbsp;</div>
 
