@@ -7,15 +7,18 @@
 <struts-config>
 
 	<form-beans>
-		<form-bean name="helloWorldForm" type="org.ofbiz.test.form.HelloWorldForm" />
+		<form-bean name="helloWorldForm" type="org.ofbiz.test.form.HelloWorldForm"/>
+		<form-bean  name="FileUpload"   type="org.ofbiz.test.form.UploadFileForm"/> 
 	</form-beans>
 
 	<global-forwards>
 		<forward name="helloWorld" path="/helloWorld.do" />
 	</global-forwards>
 	<action-mappings>
-		<action path="/helloWorld" type="org.ofbiz.test.action.HelloWorldAction"
-			name="helloWorldForm">
+		<action path="/helloWorld" type="org.ofbiz.test.action.HelloWorldAction" name="helloWorldForm">
+			<forward name="success" path="/form.jsp" />
+		</action>
+		<action   path="/FileUpload" type="org.ofbiz.test.action.UploadFileAction" name="FileUpload" scope="request" validate="true"  input="/pages/FileUpload.jsp">   <forward name="success" path="/pages/uploadsuccess.jsp"/>
 			<forward name="success" path="/form.jsp" />
 		</action>
 	</action-mappings>

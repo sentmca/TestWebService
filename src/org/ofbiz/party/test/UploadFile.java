@@ -80,35 +80,35 @@ public class UploadFile {
 					e.printStackTrace();
 				}
 
-			} else {
-				FileItemFactory factory = new DiskFileItemFactory();
-				ServletFileUpload upload = new ServletFileUpload(factory);
-				@SuppressWarnings("rawtypes")
-				List items = null;
-				try {
-					items = upload.parseRequest(request);
-				} catch (FileUploadException e) {
-					e.printStackTrace();
-				}
-				@SuppressWarnings("rawtypes")
-				Iterator itr = items.iterator();
-				while (itr.hasNext()) {
-					FileItem item = (FileItem) itr.next();
-					if (item.isFormField()) {
-					} else {
-						try {
-							String itemName = item.getName();
-							File savedFile = new File(request.getSession()
-									.getServletContext().getRealPath("/")
-									+ "uploadedFiles/" + itemName);
-							item.write(savedFile);
-						} catch (Exception e) {
-							e.printStackTrace();
-						}
+			}
+
+		} else {
+			FileItemFactory factory = new DiskFileItemFactory();
+			ServletFileUpload upload = new ServletFileUpload(factory);
+			@SuppressWarnings("rawtypes")
+			List items = null;
+			try {
+				items = upload.parseRequest(request);
+			} catch (FileUploadException e) {
+				e.printStackTrace();
+			}
+			@SuppressWarnings("rawtypes")
+			Iterator itr = items.iterator();
+			while (itr.hasNext()) {
+				FileItem item = (FileItem) itr.next();
+				if (item.isFormField()) {
+				} else {
+					try {
+						String itemName = item.getName();
+						File savedFile = new File(request.getSession()
+								.getServletContext().getRealPath("/")
+								+ "uploadedFiles/" + itemName);
+						item.write(savedFile);
+					} catch (Exception e) {
+						e.printStackTrace();
 					}
 				}
 			}
-
 		}
 		return "Success";
 	}
